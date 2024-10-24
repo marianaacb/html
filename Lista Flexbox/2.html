@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company layout</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            color:rgb(163, 163, 163);
+        }
+        .container {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin:5px;
+        }
+        .container>div{
+            background-color: rgb(219, 219, 219);
+            width: 200px;
+            height: 25px;
+            display: flex;
+            margin: 5px;
+        }
+        .footer{
+            display:flex;
+            flex-direction: column;
+            margin:5px;
+            align-items: center;
+            width: 200px;  
+            height: 200px;
+            justify-content: flex-end;
+        }
+
+        #redondo{
+            border-radius: 50%;
+            background-color: rgb(219, 219, 219);
+            bottom:0;
+            width: 50px;  
+            height: 50px; 
+            margin: 10px;
+        }
+
+        #campo{
+            background-color: rgb(219, 219, 219);
+            bottom:0;
+            width: 100px;
+            height: 25px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Company Logo</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="footer">
+        <div id="redondo"></div>
+        <div id="campo"></div>
+
+    </div>
+
+    
+
+</body>
+</html>

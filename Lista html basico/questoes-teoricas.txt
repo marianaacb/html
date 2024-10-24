@@ -1,0 +1,37 @@
+a. O que é Internet e WEB? São as mesmas coisas? Explique de forma clara e evidencie as diferenças.
+Não são as mesmas coisas. A internet é uma rede global de computadores que usam protocolos para se comunicarem. A WEB é um sistema de páginas interligadas que pode ser acessado pela internet.
+Ou seja, a Internet é a infraestrutura enquanto a web são as aplicações que funcionam em cima dessa infraestrutura.
+
+b. O que é arquitetura cliente-servidor utilizada na web ? Explique o carregamento de uma página passo a passo. 
+Cliente é quem solicita um serviço ou recurso, e o servidor é quem fornece esses serviços ou recursos.
+O cliente geralmente é um navegador web enquanto o servidor pode ser um servidor web ou banco de dados.
+
+O cliente faz uma requisição para o servidor;
+O servidor processa a requisição do cliente;
+O servidor retorna o conteúdo da página ao cliente;
+O navegador recebe a resposta, interpreta o html e renderiza a página.
+
+c. O que é um tag HTML?
+é um elemento que define a estrutura e conteúdo da página
+
+d. O que é HTML e qual a estrutura básica de um documento HTML?
+Hypertext Markup Language é uma linguagem de marcação que cria e estrutura o conteúdo de uma página na web.
+A estrutura básica é:
+<!DOCTYPE html>			-> dita a versão do html sendo usada
+<html>				-> abre o documento 
+<head>				-> o que a gente não vê na página
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>	-> título que aparece na guia do navegador
+</head>
+<body>				-> onde ficam os elementos visíveis na página
+</body>
+</html>				-> fecha o documento
+
+e. Discuta com colega o que são tags semânticas  do HTML
+São elementos que descrevem claramente o seu significado tanto para o navegador quanto o desenvolvedor.
+ex.: <form> <table>, etc.
+
+f. Explique como é criado um link no html sobre um parágrafo. 
+para criar um link sobre um parágrafo, é usado a tag <a> com o atributo href, com o url do link
+ou seja; <p> para entrar no site, <a href="https://www.exemplo.com">clique aqui</a>.</p>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .componente {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: palevioletred;
+            color: white;
+            text-align: center;
+            line-height: 150px
+        }
+
+        #div1{
+            bottom:0;
+            left:0;
+        }
+
+        #div2{
+            bottom:0;
+            right:0;
+        }
+
+        #div3{
+            top:0;
+            right:0;
+        }
+
+        #div4{
+            top:0;
+            left:0;
+        }
+
+        #div5{
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        
+    <div class='componente' id="div1"> Canto inferior esquerdo </div>
+    <div class='componente' id="div2"> Canto inferior direito </div>
+    <div class='componente' id="div3"> Canto superior direito </div>
+    <div class='componente' id="div4"> Canto superior esquerdo </div>
+    <div class='componente' id="div5"> Centro </div>
+
+    </div>
+    
+</body>
+</html>

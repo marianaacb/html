@@ -1,0 +1,59 @@
+níveis 1-4)
+usando a propriedade justify-content, os elementos podem ser alinhados horizontalmente de maneiras diferentes.
+
+flex-start	-> alinha os elementos no início da linha
+flex-end 	-> alinha os elementos no final da linha
+
+center		-> alinha os elementos no centro da linha
+
+space-between	-> itens são exibidos com espaçamento igual entre si
+space-around	-> itens são exibidos com espaçamento igual ao redor de si
+
+níveis 5-7)
+a propriedade align-items, os elementos podem ser alinhados verticalmente e de outras formas
+
+flex-start	-> alinha os itens em cima do container
+flex-end	-> alinha os itens no final do container
+center		-> alinha os itens no centro
+baseline	-> alinha os itens na baseline(primeira linha) do container
+stretch		-> os itens são esticados para encaixar dentro do container(default)
+
+níveis 8-14)
+a propriedade flex-direction define a direção dos itens dentro do container.
+
+row		-> itens são colocados na direção do texto
+row-reverse	-> itens são colocados na direção contrária do texto
+column		-> itens são colocados de cima para baixo
+column-reverse	-> contrário do column
+
+níveis 14-15)
+a propriedade order reorganiza os elementos de maneira individual.
+ex.: order: 1;
+níveis 16-17)
+a propriedade align-self tem os mesmos aspectos de align-items mas apenas para um item específico
+
+níveis 18-19)
+a propriedade flex-wrap organiza os elementos e pode esticar ou comprimir eles.
+
+nowrap	-> todos os itens ficam em uma única linha
+wrap	-> os itens se envolvem em linhas adicionais 
+wrap-reverse	-> o contrário do wrap
+
+nível 20)
+a propriedade flex-flow é uma combinação das propriedades Direction e wrap.
+
+níveis 21-23)
+a propriedade align-content define como múltiplas linhas são espaçadas entre si. tem as mesmas propriedades do align-items, e a propriedade stretch
+stretch		-> as linhas são esticadas para caber dentro de um container
+
+nível 24)
+em resumo, todas as propriedades usadas foram:
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+
