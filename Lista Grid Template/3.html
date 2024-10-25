@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        #container{
+            display:grid;
+            height:100vh;
+            width: 100vw;
+            background-color: bisque;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        #container>div{
+            background-color: rgb(46, 46, 46);
+            color:white;
+            font-size: 50px;
+            text-align: center;
+            margin:10px;
+            border-radius: 1cap;
+        }
+
+        #d>div{
+            background-color: rgb(172, 172, 172);
+            font-size: 40px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 1cap;
+        }
+
+        #a{
+            grid-column: span 2;
+        }
+
+        #b{
+            grid-column: 4;
+        }
+
+        #d{
+            display:grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column:span 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">C</div>
+        <div id="d">
+
+            <div id="e">E</div>
+            <div id="f">F</div>
+            <div id="g">G</div>
+            <div id="m">M</div>
+            <div id="i">I</div>
+            <div id="j">J</div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>

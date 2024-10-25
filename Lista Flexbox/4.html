@@ -6,19 +6,117 @@
     <title>Document</title>
 
     <style>
+        .grande, .icone, .pequeno{
+            background-size:cover;
+            background-position: center;
+        }
 
+        .container{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
 
+        .pequeno{
+            display:flex;
+            width: 75px; 
+            height: 300px;
+            border-radius: 5cap;
+            margin: 5px;
+            background-color: blue;
+            justify-content: center;
+            align-items:flex-end;
+        }
+
+        .grande{
+            display:flex;
+            width: 400px;
+            height: 300px;
+            margin:5px;
+            border-radius: 5cap;
+            background-image: url('https://i.pinimg.com/736x/95/10/44/951044c2067266161485c6221f9c741d.jpg');
+
+            flex-direction: row;
+            align-items:flex-end;
+            
+        }
+        #bold{
+            font-weight: bold;
+        }
+        p{
+            margin:0px;
+            bottom:0px;
+            color:white;
+        }
+
+        .icone{
+            height: 50px;   
+            width: 50px;
+            margin:10px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .divisao{
+            width: 300px;
+            height: 60px;
+        }
+
+        #d1{
+            background-image: url('https://i.pinimg.com/736x/4c/56/37/4c56371abd87585b0d40a4df03f59ef5.jpg');
+        }
+        
+        #d2{
+            background-image: url('https://i.pinimg.com/736x/3a/eb/94/3aeb9495ab9bb5955f946133afdd101e.jpg');
+        }
+
+        #d3{
+            background-image: url('https://i.pinimg.com/736x/57/29/e0/5729e090e29513275027d62acfdd4ffc.jpg');
+        }
+
+        #d4{
+            background-image: url('https://i.pinimg.com/736x/85/c5/fa/85c5fa1b5fee783d44e702e670c9cbc6.jpg');
+        }
+        .icone{
+            background-image: url('https://i.pinimg.com/enabled_hi/564x/48/b8/c5/48b8c529f0e8668cfd33a77dd35f1540.jpg');
+        }
+        #ico1{
+            background-image: url('https://i.pinimg.com/564x/cb/b5/8a/cbb58a1f3c1dec98206df41a8842dac6.jpg');
+        }
+        #ico2{
+            background-image: url('https://i.pinimg.com/enabled_hi/564x/0e/63/9d/0e639dbf3b3d263fc1ef8d16caee2de6.jpg');
+        }
+
+        
     </style>
 </head>
 <body>
     
     <div class="container">
-        
+        <div class="pequeno" id="d1">
+            <div class="icone" id="ico2"></div>
+        </div>
 
+        <div class="grande">
+            
+            <div class="icone" id="ico1"></div>
+            <div class="divisao">
+                <p id="bold">Texto de título</p> 
+                <p>Um pouquinho mais de texto aqui na descrição</p>
+            </div>
 
+        </div>
 
-
-
+        <div class="pequeno" id="d2">
+            <div class="icone"></div>
+        </div>
+        <div class="pequeno" id="d3">
+            <div class="icone"></div>
+        </div>
+        <div class="pequeno" id="d4">
+            <div class="icone" id="ico2"></div>
+        </div>
     </div>
 
 

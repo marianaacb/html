@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container>div{
+            margin:5px;
+            font-size: 25px;
+            font-display: center;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+        }
+        #header, #right{
+            background-color: rgb(248, 194, 79);
+        }
+
+        #banner{
+            background-color: rgb(204, 84, 84);
+        }
+
+        #left, #low{
+            background-color: rgb(102, 177, 102);
+        }
+
+        #main, #footer{
+            background-color: rgb(68, 76, 199);
+        }
+
+        @media (min-width:913px){
+            .container{
+                background-color: rgb(250, 214, 168);
+                grid-template-rows: 1.5fr 1fr 5fr 1.5fr 1fr;
+                grid-template-columns: 1fr 4fr 1fr;
+            }
+
+            #header, #footer{
+                grid-column: span 3;
+            }
+            #left, #right{
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+
+            #banner{
+                grid-row: 2;
+                grid-column: 2;
+            }
+
+            #right{
+                grid-column: 3;
+            }
+            #left{
+                grid-column: 1;
+            }
+
+            #low{
+                grid-column: 2;
+            }
+
+        }
+        @media (max-width:913px){
+            .container{
+                background-color: azure;
+                grid-template-rows: repeat(3, 1fr) 6fr repeat(3, 1fr);
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="banner">Banner</div>
+        <div id="left">Left Aside</div>
+        <div id="main">Main Content</div>
+        <div id="right">Right Aside</div>
+        <div id="low">Low Content</div>
+        <div id="footer">Footer</div>
+    </div>
+
+</body>
+</html>
