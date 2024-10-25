@@ -1,0 +1,75 @@
+1) Explique o que ocorre em um acesso a uma página na web, descreva todas etapas e protocolos envolvidos até a carga completa do site.
+
+Através de uma arquitetura cliente-servidor, onde o cliente é quem solicita um serviço ou recurso(navegador web), e o servidor é quem fornece(servidor web ou banco de dados):
+O cliente faz uma requisição para o servidor;
+O servidor processa a requisição do cliente;
+O servidor retorna o conteúdo da página ao cliente;
+O navegador recebe a resposta, interpreta o html e renderiza a página.
+
+2) O html não é uma linguagem de programação, e sim uma linguagem de marcação, que apenas fala o que vai ter na página.(hypertext marckup)
+Já o css também não é linguagem de programação, e sim uma linguagem de estilo (cascade sheet style). Ambos não passam no teste de Turing 
+
+3) Sobre css responda:
+
+a) Quais são as formas de incluir css em um documento HTML cite as três e explique que impacto isso tem no processamento das regras.
+Dentro do próprio arquivo html (css interno)	-> funciona apenas dentro da página, o melhor uso é para projetos pequenos ou páginas com design único
+Em um arquivo separado (css externo)		-> boa prática, facilita a manutenção e pode funcionar para várias páginas diferentes
+dentro da declaração da tag (css inline)	-> usado em casos específicos pois dificulta muito a manutenção
+
+b) Como funcionam seletores CSS explique se necessário com exemplos.
+
+Grupo		-> seleciona um grupo de elementos. ex.: h1, h2, h3
+Simples		-> podem selecionar os elementos por tipo, id, classe	ex.: .classe 	#id 	div
+Combinadores	-> podem selecionar os elementos com base na sua posição em relação a outros elementos. ex.: div>.classe 	div~.classe div+classe	  
+Pseudo-classes	-> podem selecionar os elementos com base no seu estado. ex.: div:hover	div:first-child
+
+c) Como funcionam o posicionamento de elementos no HTML e CSS, descreva e explique se necessário com exemplos.
+Static		-> O elemento é posicionado na ordem de declaração html
+Relative	-> O elemento é posicionado em relação a posição inicial, e pode ser alterado com as propriedades top, bottom, left e right.
+Absolute	-> O elemento é posicionado em relação ao seu ancestral mais próximo que esteja com um position definido. 
+Fixed		-> O elemento é posicionado em relação a tela inteira e fica fixo em um só lugar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+position: fixed
+position: absolut

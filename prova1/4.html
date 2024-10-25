@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container{
+            display: flex;
+            height: 315px;
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        #container>div{
+            border: 1px solid black; 
+            height: 300px;
+            width: 450px;
+            margin:5px;
+        }
+
+        #franca>div{
+            height: 100px;
+            width: 100%;
+        }
+
+        #vermelho{
+            background-color: red;
+        }
+        #branco{
+            background-color: white;
+        }
+        #azul{
+            background-color: blue;
+        }
+
+        #japao{
+            background-color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #circulo{
+            background-color: red;
+            border-radius: 100%;
+            height: 125px;
+            width: 125px;
+        }
+
+        #italia{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        #verde{
+            background-color: green;
+        }
+        #branc{
+            background-color: white;
+        }
+        #verm{
+            background-color: red;
+        }
+
+        #container>div:hover{
+            zoom: 125%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div title="Japão" id ="japao" >
+            <div id="circulo"></div>
+        </div>
+
+        <div title="França" id="franca">
+            <div id="vermelho"></div>
+            <div id="branco"></div>
+            <div id="azul"></div>
+        </div>
+
+        <div title="Italia" id="italia">
+            <div id="verde"></div>
+            <div id="branc"></div>
+            <div id="verm"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        body{
+            margin:0px;
+        }
+
+
+        .container>div{
+            margin:2px;
+            font-size: 25px;
+            font-display: center;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+        }
+
+        #header{
+            background-color: rgb(240, 202, 118);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #icone{
+            background-image: url('https://cdn-icons-png.flaticon.com/512/10733/10733278.png');
+            background-size:cover;
+            background-position: center;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+        h1{
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        #right{
+            background-color: rgb(248, 194, 79);
+        }
+
+        #banner{
+            background-color: rgb(204, 84, 84);
+            display: flex;
+            justify-content: center;
+        }
+
+        #left{
+            background-color: rgb(102, 177, 102);
+            display:flex
+        }
+
+        #left>p{
+            background-color: rgb(50, 131, 0);
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            margin:4px;
+        }
+
+
+        #main{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+            
+        }
+
+        #footer{
+            font-size: small;
+            font-weight: bold;
+            background-color: rgb(68, 76, 199);
+        }
+        #footer>p{
+            color:white;
+        }
+
+        #chat{
+            position:fixed;
+            bottom: 0;
+            right:0;
+
+            height: 40%;
+            width: 30%;
+            background-color: red;
+            border-radius: 1cap;
+        }
+
+
+        @media (min-width:913px){
+            .container{
+                background-color: rgb(250, 214, 168);
+                grid-template-rows: 1.5fr 1fr 5fr ;
+                grid-template-columns: 1fr 4fr;
+            }
+
+            #header, #footer{
+                grid-column: span 2;
+            }
+            #left{
+                grid-row-start: 2;
+                grid-row-end: 5;
+                display:grid;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-columns: 1fr;
+
+                
+            }
+
+            img{
+                grid-row:-1;
+                width: 150;
+                height: 150px;
+                justify-self: center;
+            }
+
+            #banner{
+                grid-row: 2;
+                grid-column: 2;
+            }
+            #left{
+                grid-column: 1;
+            }
+
+
+        }
+        @media (max-width:913px){
+            .container{
+                background-color: rgb(255, 242, 225);
+                grid-template-rows: repeat(3, 1fr) 6fr repeat(2, 1fr);
+            }
+            #left{
+                justify-content: space-around;
+            }
+            #left>img{
+                width: 25px;
+                height: 25px;
+                visibility: collapse;
+            }
+        }
+
+
+
+        .pessoa{
+            display:flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+
+        .dados{
+            display:flex;
+            flex-direction: column;
+        }
+
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .separador{
+            
+            height:1px;
+            width:90%;
+            background-color: black;
+        }
+
+        .dados>h6{
+            margin: 2px;
+            font-size: 30px;
+        }
+
+        #foto{
+            width: 60px;
+            height: 60px;
+        }
+        #chat>.pessoa{
+            margin:1px;
+        }
+
+        #conversa{
+            display: flex;
+            flex-direction: column;
+        }
+        #conversa>div{
+            background-color: #ffffff;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 0.2cap;
+            text-align: ;
+        }
+
+        #conversa>#eu{
+            background-color: rgb(91, 148, 253);
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="icone"></div>
+
+            <div class="conteudo">
+                <h1>Delivery ultra poggers</h1>
+                <p>compre já aqui! melhores preços da cidade</p>
+            </div>
+
+        </div>
+        
+        <div id="banner">
+            <h5>Promoção na pizza de queijo toda sexta-feira !! Não perca</h6>
+
+
+        </div>
+        <div id="left">
+            <p>Comprar pizzas</p>
+            <p>Como pedir</p>
+            <p>Formas de pagamento</p>
+
+            <img src="https://cdn-icons-png.flaticon.com/256/5457/5457799.png">
+
+        </div>
+
+        <div id="main">
+
+
+            <div class="pessoa">
+                <img src="https://cdn-icons-png.flaticon.com/512/12482/12482589.png">
+                <div class="dados">
+                    <h6 class="Nome">Calabresa</h6>
+                    <p class="Desc">Calabresa, queijo, cebola</p>
+                </div>
+    
+            </div>
+            
+            <div class="separador"></div>
+    
+            
+            <div class="pessoa">
+                <img src="https://cdn-icons-png.flaticon.com/512/1744/1744041.png">
+                <div class="dados">
+
+                    <h6 class="Nome">Queijo</h6>
+
+                    <p class="Desc">Vem com queijo</p>
+
+                </div>
+    
+            </div>
+            
+            <div class="separador"></div>
+            
+            <div class="pessoa">
+                <img src="https://cdn-icons-png.flaticon.com/512/545/545169.png">
+                <div class="dados">
+                    <h6 class="Nome">Baiana</h6>
+                    <p class="Desc">Muita pimenta, cebola, queijo, e mais alguma coisa</p>
+                </div>
+    
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Pizzarias comércio ltda tdah blumenau, ifsc, gaspar e região real oficial</p>
+        </div>
+
+
+        <div id="chat">
+            <div class="pessoa">
+                <img id="foto"src="https://cdn-icons-png.freepik.com/512/6308/6308732.png">
+                <h6> Restaurante</h6>
+            </div>
+
+            <div class="separador"></div>
+
+            <div id="conversa">
+                <div> Como posso ajudar?</div>
+
+                <div id="eu"> Quero uma pizza</div>
+
+               
+            </div>
+            <input type="text" id="nome" name="nome">
+        </div>
+    </div>
+
+</body>
+</html>
