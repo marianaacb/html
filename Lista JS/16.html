@@ -9,7 +9,7 @@
         body{
             margin: 0;
             padding: 0;
-            
+            background-color: aliceblue;
         }    
         div{
             display: flex;
@@ -18,8 +18,8 @@
             height: 100vh;
         }
         button{
-            background-color: #4CAF50;  
-            color: white;  
+            background-color: white;
+            color: rgb(0,0,0);  
             font-size: 30px;  
             font-weight: bold;
             padding: 10px 20px; 
@@ -33,31 +33,27 @@
     
     <div>
         <button id="contador">
-            0
+            Mudar fundo
         </button>
     </div>
 
     <script>
         const button = document.getElementById("contador");
-        let num = 0;
 
          function cont(){
-            num += 1;
-            button.textContent = num;
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
 
+
+            let hex = Math.floor(Math.random()*16777215).toString(16);
+            //document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`; 
+
+            document.body.style.backgroundColor = `#${hex}`; 
         }
+
         button.addEventListener("click", cont);
 
-
-        /*
-        Quando modificando um campo input, é usado o [input.innerText='texto']
-        Mas, para modificar um botão, é usado o [button.textContent='texto']
-        */
-
     </script>
-
-
-
-
 </body>
 </html>

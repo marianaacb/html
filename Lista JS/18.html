@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="textos"></div>
+
+    <script>
+        let textos=document.querySelector(".textos")
+
+        
+        document.addEventListener('keydown', function(event) {
+            const para = document.createElement("p");
+            para.innerText = event.code;
+
+            textos.appendChild(para);
+        });
+
+
+
+    </script>
+
+</body>
+</html>
